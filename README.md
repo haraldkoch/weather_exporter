@@ -19,7 +19,7 @@ Configuration option names are the same across all methods. Environment variable
  - `dark_sky_api_uri`: URL of the darksky.net api (version as of 10/10/2017). Defaults to `https://api.darksky.net/forecast`.
  - `scrape_interval`: how often to poll darksky.net for data in seconds. Defaults to `600` seconds.
  - `endpoint_port`: what port to expose `weather_exporter` on. Defaults to `9265`.
- - `cities`: comma-separated list of cities as understood by [`Nominatim`](https://wiki.openstreetmap.org/wiki/Nominatim). Defaults to "`nyc,tokyo,lima,london,shanghai`".
+ - `cities`: semi-colon-separated list of cities as understood by [`Nominatim`](https://wiki.openstreetmap.org/wiki/Nominatim). Defaults to "`atlanta,ga;nyc;tokyo;lima;london;shanghai`".
  - `geocode_timeout`: timeout in seconds on api calls to [`Nominatim`](https://wiki.openstreetmap.org/wiki/Nominatim). Defaults to `10` seconds.
  - `units`: unit of the weather data. See [Dark Sky API Docs](https://darksky.net/dev/docs#forecast-request) for a list of valid units. Defaults to `us` (imperial units).
 
@@ -34,7 +34,7 @@ $ export DARK_SKY_API_KEY=<dark_ski_api_key>
 ```
 # ENV Variables
 ENDPOINT_PORT=9265
-CITIES=nyc,portland or,london
+CITIES=nyc;atlanta, ga
 SCRAPE_INTERVAL=10000
 ```
 

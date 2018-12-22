@@ -69,6 +69,6 @@ if __name__ == "__main__":
   exporter = WeatherExporter(options)
   start_http_server(int(options['endpoint_port']))
   while True:
-    for city in options['cities'].split(','):
+    for city in options['cities'].split(';'):
       exporter.report_metrics(city)
     time.sleep(int(options['scrape_interval']))

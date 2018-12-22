@@ -14,7 +14,7 @@ DEFAULT_OPTIONS = {
   'dark_sky_api_key' : '',
   'scrape_interval': 600,
   'endpoint_port': 9265,
-  'cities': 'nyc,tokyo,lima,london,shanghai',
+  'cities': 'atlanta, ga;nyc;tokyo;lima;london;shanghai',
   'geocode_timeout': 10,
   'units': 'us'
 }
