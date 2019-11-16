@@ -1,10 +1,11 @@
 # Docker Variables
-ORGANIZATION=celliott
+ORGANIZATION=haraldkoch
 CONTAINER=weather_exporter
 VERSION=latest
 
 # ENV Variables
 SERVICE=weather-exporter
-DOMAIN=toobox.io
+DOMAIN=chk.cfrq.net
 SCRAPE_INTERVAL=600
-CITIES="brooklyn,london"
+CITIES="toronto"
+UNITS=ca

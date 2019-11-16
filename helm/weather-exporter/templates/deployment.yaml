@@ -37,6 +37,11 @@ spec:
                 configMapKeyRef:
                   name: {{ template "fullname" . }}
                   key: cities
+            - name: UNITS
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ template "fullname" . }}
+                  key: units
             - name: DARK_SKY_API_KEY
               valueFrom:
                 secretKeyRef:

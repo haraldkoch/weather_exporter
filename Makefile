@@ -34,7 +34,9 @@ deploy :
 		--set darkSkyAPIKey=${DARK_SKY_API_KEY} \
 		--set scrapeInterval=${SCRAPE_INTERVAL} \
 		--set ingress.hostname=$(SERVICE).$(DOMAIN) \
-		--set ingress.enabled=false
+		--set ingress.enabled=false \
+		--set cities=${CITIES} \
+		--set units=${UNITS}
 
 delete :
 	helm del --purge $(SERVICE)

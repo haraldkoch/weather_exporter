@@ -1,0 +1,18 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: weather-exporter-weather-exporter
+  namespace: weather-exporter
+  labels:
+    app: weather-exporter
+  annotations:
+spec:
+  rules:
+  - host: cluster.chk.cfrq.net
+    http:
+      paths:
+      - path: /weather-exporter
+        backend:
+          serviceName: weather-exporter-weather-exporter
+          servicePort: 9265
