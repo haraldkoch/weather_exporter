@@ -77,7 +77,6 @@ def get():
 
   if not final_options['dark_sky_api_key']:
     print "ERROR; NO API KEY FOUND. make sure to set your api key. See readme"
-    exit(1)
 
   dark_sky_uri = urlparse(final_options['dark_sky_api_uri'])
   api_path = dark_sky_uri[2].strip()
