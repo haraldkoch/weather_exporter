@@ -1,3 +1,5 @@
+**Note: The Dark Sky API is no longer available, so this project is defunct.**
+
 # weather_exporter
 
 A docker container for running a prometheus weather_exporter using Dark Sky API. It exports current weather for a list of cities. [Demo](https://github.com/celliott/telemetry)
